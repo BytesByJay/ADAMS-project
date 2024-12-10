@@ -430,10 +430,15 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .icon-boxes h3 {
-  font-size: 28px;
+  font-size: 45px;
   font-weight: 700;
   color: #0f394c;
   margin-bottom: 15px;
+}
+.about .icon-boxes p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
 }
 
 .about .icon-box {
@@ -680,9 +685,12 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 30px;
+  padding: 20px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   border-radius: 10px;
   margin: 0 10px 40px 10px;
   background: #fff;
@@ -695,9 +703,9 @@ section {
 }
 
 .services .icon {
-  position: absolute;
-  left: -20px;
-  top: calc(50% - 30px);
+  /* position: absolute; */
+  /* left: -20px; */
+  /* top: calc(50% - 30px); */
 }
 
 .services .icon i {
@@ -707,7 +715,7 @@ section {
 }
 
 .services .title {
-  margin-left: 40px;
+  /* margin-left: 40px; */
   font-weight: 700;
   /* margin-bottom: 15px; */
   font-size: 18px;
@@ -1051,6 +1059,12 @@ section {
   }
 }
 
+.doctor5Img{
+  height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1299,6 +1313,10 @@ section {
   .breadcrumbs {
     margin-top: 74px;
   }
+  .doctor5Img{
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
 }
 
 .breadcrumbs h2 {
@@ -1514,6 +1532,9 @@ section {
   #footer .credits {
     float: none;
     text-align: center;
+  }
+  .about .icon-boxes h3 {
+    font-size: 25px;
   }
 }
 
