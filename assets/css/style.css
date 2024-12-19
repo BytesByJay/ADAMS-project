@@ -1536,6 +1536,9 @@ section {
   .about .icon-boxes h3 {
     font-size: 25px;
   }
+  .newsHead{
+    height: 40svh;
+  }
 }
 
 
