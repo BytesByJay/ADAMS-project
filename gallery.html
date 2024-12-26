@@ -116,9 +116,9 @@
   <nav id="navbar" class="navbar">
     <div class="d-flex justify-content-end justify-content-lg-center w-100 p-3">
       <ul>
-        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto " href="index.html">Home</a></li>
         <li><a class="nav-link" href="registration.html">Registration</a></li>
-        <li><a class="nav-link scrollto" href="#about">About</a></li>
+        <li><a class="nav-link scrollto active" href="#about">About</a></li>
         <li><a class="nav-link scrollto" href="#services">Services</a></li>
         <li><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li><a class="nav-link" href="inner-page.html">information desk</a></li>
@@ -134,6 +134,9 @@
     <h2 class="logo m-3 text-center">Gallery</h2>
     <section class="gallery">
       <div class="container">
+        <div class="d-flex justify-content-end gallery">
+        <i data-bs-toggle="modal" data-bs-target="#galleryUpload" class="bi bi-plus fs-3 d-flex justify-content-center align-items-center rounded "></i>
+      </div>
         <div class="row">
           <!-- Gallery Item 1 -->
           <div class="col-lg-4 col-md-6">
@@ -154,6 +157,38 @@
         </div>
       </div>
     </section>
+
+    <!-- modal -->
+    <div class="modal fade" id="galleryUpload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Centered Modal Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="customInputs">
+              <div class="row">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload an Image</label>
+                    <input class="form-control" type="file" id="formFile" accept="image/*">
+                  </div>
+                  <div class="preview mt-3">
+                    <img id="imagePreview" class="img-thumbnail" style="display: none; max-width: 100%; height: auto;"
+                      alt="Image Preview">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary secondaryBtn" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary primaryBtn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- Footer -->

@@ -77,8 +77,6 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center m-0 p-0">
-
-    <div class="container-fluid">
       <div class="row">
         <!-- <div class="col-lg-8 col-md-8 col-12 p-1" style="height: 64vh;"> -->
         <div class="col-lg-8 col-md-8 col-12 p-1">
@@ -93,16 +91,16 @@
             </div>
             <div class="carousel-inner h-100">
               <div class="carousel-item active h-100">
-                <img src="assets/img/client-img/doctor04.jpeg" style="object-fit: cover;"
-                  class="d-block w-100 h-100" alt="...">
+                <img src="assets/img/client-img/doctor04.jpeg" style="object-fit: cover;height: 64vh;"
+                  class="d-block w-100 carosuselImg" alt="...">
               </div>
               <div class="carousel-item h-100">
-                <img src="assets/img/client-img/doctor03.jpeg" style="object-fit: cover;"
-                  class="d-block w-100 h-100" alt="...">
+                <img src="assets/img/client-img/doctor03.jpeg" style="object-fit: cover;height: 64vh;"
+                  class="d-block w-100 carosuselImg" alt="...">
               </div>
               <div class="carousel-item h-100">
-                <img src="assets/img/client-img/doctor02.jpeg" style="object-fit: cover;"
-                  class="d-block w-100 h-100" alt="...">
+                <img src="assets/img/client-img/doctor02.jpeg" style="object-fit: cover;height: 64vh;"
+                  class="d-block w-100 carosuselImg" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -118,8 +116,11 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-12 p-1">
-          <div class="h-100" style="background-color: #243c71; overflow: hidden;">
-            <h2 style="margin: 0; padding: 1em; color: white;">What's New</h2>
+          <div id="hero" class="newsHead" style="background-color: #243c71; overflow: hidden;">
+            <div class="d-flex justify-content-between align-items-center py-2 px-3 newsBoxMain">
+              <h2 class="text-center" style="margin: 0; color: white;">What's New</h2>
+              <i data-bs-toggle="modal" data-bs-target="#exampleModal" class="bi bi-plus fs-3 d-flex justify-content-center align-items-center rounded "></i>
+            </div>
             <div class="ticker-container h-100">
               <ul class="ticker-list mt-0">
                 <li class="ticker-item">Notice for General Body Meeting of ADAMS <span
@@ -144,7 +145,6 @@
         </div>
 
       </div>
-    </div>
     </div>
 
   </section><!-- End Hero -->
@@ -327,6 +327,34 @@
 
       </div>
     </section><!-- End Contact Section -->
+
+
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Centered Modal Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="customInputs">
+              <div class="row">
+                <div class="col-12">
+                  <label for="">News Field</label>
+                  <textarea id="comments" name="comments"  placeholder="Enter News"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary secondaryBtn"  data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary primaryBtn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   </main><!-- End #main -->
