@@ -1487,6 +1487,280 @@ transition: all .3s ease-in;
  .form-text a:hover {
    text-decoration: underline;
  }
+
+     /* Sidebar Styles */
+.l-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 92px;
+  height: 100vh;
+  background-color: #12192C;
+  color: #FFFFFF;
+  padding: 1.5rem 1.5rem 2rem;
+  transition: .5s;
+  z-index: 100;
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.nav-brand {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.nav-toggle {
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.nav-logo {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: 'Turret Road', sans-serif;
+}
+
+.nav-linkSidebar {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: .75rem;
+  padding: 0.75rem;
+  color: #FFFFFF;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.nav-linkSidebar:hover {
+  background-color: #0C5DF4;
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+}
+
+.nav-name {
+  font-size: .875rem;
+}
+
+.expander {
+  width: calc(92px + 9.25rem);
+}
+
+.body-pd {
+  padding: 2rem 0 0 16rem;
+}
+
+.activeSidebar {
+  background-color: #0C5DF4;
+}
+
+.collapse {
+  grid-template-columns: 20px max-content 1fr;
+}
+
+.collapse-link {
+  justify-self: flex-end;
+  transition: .5s;
+}
+
+.collapse-menu {
+  display: none;
+  padding: 0.75rem 2.25rem;
+}
+
+.collapse-sublink {
+  color: #B6CEFC;
+  font-size: .875rem;
+}
+
+.collapse-sublink:hover {
+  color: #FFFFFF;
+}
+
+.showCollapse {
+  display: block;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: .5s;
+}
+
+#header .adminHeader{
+  padding-left: 90px;
+  padding-right: 30px;
+}
+
+/* Styling the table container */
+
+table{
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border-collapse: collapse;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  /* Add a border around the entire table */
+}
+.dataTable{
+  margin-top: 20px;
+}
+th {
+}
+tr:nth-child(odd) {
+}
+th, td {
+  padding: 0.7rem;
+  font-size: 13px;
+  font-weight: 500;
+}
+td:hover {
+}
+table.table-bordered.dataTable thead tr:first-child th, table.table-bordered.dataTable thead tr:first-child td{
+  border-top-width: 1px;
+}
+table.table-bordered.dataTable th,
+table.table-bordered.dataTable td{
+  border-bottom-width: 1px;
+}
+table.table-bordered.dataTable th,
+table.table-bordered.dataTable td {
+  border-left-width: 0;
+}
+.table-bordered>:not(caption)>*>* {
+  border-width: 0 1px;
+}
+table.dataTable.row-border tbody th,
+table.dataTable.row-border tbody td,
+table.dataTable.display tbody th,
+table.dataTable.display tbody td{
+border-top-width: 1px;
+border-left-width: 1px;
+border-left-color:#ddd ;
+/* border-bottom-width: 1px; */
+/* border-width: 1px 1px; */
+}
+table.dataTable.no-footer{
+  border-bottom: 1px solid #ddd;
+border-left: 0;}
+
+.paginate_button {
+  border-radius: 0 !important;
+}
+.dataTables_wrapper .dataTables_filter input{
+  /* all: unset; */
+  border: 1px solid #ddd;
+   border-radius: 5px;
+   font-size: 13px;
+   height: 30px;
+}
+table.dataTable thead th,
+table.dataTable thead td{
+  /* border-top-width: 1px; */
+    border-left-width: 1px;
+    border-left-color: #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.dataTables_wrapper .dataTables_filter input:focus-visible{
+  outline: none;
+}
+.dataTables_wrapper .dataTables_filter{
+  margin-bottom: 20px;
+}
+.dataTables_wrapper .dataTables_filter label{
+  font-size: 12px;
+}
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate{
+  font-size: 12px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+  background: #166da0;
+  color: #fff !important;
+  border: none;
+}
+.dataTables_length{
+  font-size: 13px;
+}
+.dataTables_length select {
+  border: 1px solid #ddd;
+  height: 26px;
+  width: 53px;
+  border-radius: 5px;
+}
+.dataTables_length select:focus-visible{
+  outline: none;
+}
+.dataTables_length label{
+  font-size: 12px;
+}
+/* ///tableDesign */
+
+.mainLayout{
+  padding-top: 20px;  
+  padding-bottom: 20px;
+  padding-left: 110px;
+  padding-right: 30px;
+}
+.dataDetails label{
+  font-size: 11px;
+  color: gray;
+}
+
+.dataDetails .dataValues{
+  font-size: 14px;
+}
+
+.qr-button {
+  border-radius: 30px;
+  background-color: #2196F3;
+  color: #fff;
+  padding: 10px 14px;
+  font-size: .8rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.qr-button:hover {
+  background-color: #2196F3;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.qr-button:active {
+  background-color: #2196F3;
+  transform: scale(0.98);
+}
+
+.qr-button .bi-qr-code {
+  margin-right: 10px;
+}
+
+.dataDetails img{
+  height: 200px;
+  object-fit: contain;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
