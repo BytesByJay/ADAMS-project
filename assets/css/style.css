@@ -329,6 +329,7 @@ h6 {
   /* height: 64vh; */
   background: #f9f9f9;
   /* margin-top: 1em; */
+  border-radius: 10px;
 }
 
 #hero .container {
@@ -593,21 +594,11 @@ section {
 
 
 .counts {
-  background: url("../img/client-img/doctor05.jpeg") center center no-repeat;
+  background: url("../img/client-img/section-bg-2.jpg") center center no-repeat;
   background-size: cover;
-  padding: 10px 0 10px 0;
+  padding: 40px 0;
   position: relative;
   margin-top: 20px;
-}
-
-.counts::before {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 
 
@@ -1761,6 +1752,152 @@ table.dataTable thead td{
   height: 200px;
   object-fit: contain;
 }
+
+.newBannerHome{
+  background-image: url(../../assets/img/client-img/doctor04.jpeg)no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: calc(100dvh - 164.6px);
+  animation: back 7s infinite;
+  background-blend-mode:color ;
+  background-color: #00000048;
+  padding: 0;
+}
+@media (max-width:990px) {
+  .newBannerHome{
+    height: unset;
+  }
+}
+@keyframes back {
+  0% {
+      background-image: url(../../assets/img/client-img/doctor04.jpeg);
+    }
+  25% {
+    background-image: url(../../assets/img/client-img/doctor03.jpeg);
+  }
+
+  50% {
+    background-image: url(../../assets/img/client-img/doctor02.jpeg);
+  }
+
+  75% {
+    background-image: url(../../assets/img/client-img/doctor01.jpeg);
+  }
+  100% {
+    background-image: url(../../assets/img/client-img/doctor04.jpeg)
+  }
+}
+
+.AdminLoginPortal{
+  width: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffffd7;
+  filter: blur(-20px);
+  height: 100%;
+  border-right: 1px solid #ddd;
+}
+
+@media (max-width:990px){
+  .AdminLoginPortal{
+    position: unset;
+    height: 64svh;
+    border-radius: 10px;
+  }
+}
+
+.adminLoginMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.AdminLoginPortal h1{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.AdminLoginPortal .loginMiddle{
+  text-align: center;
+}
+.AdminLoginPortal .loginMiddle h4{
+  font-size: 20px;
+}
+.AdminLoginPortal a {
+  background: #49b5e7;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #49b5e7;
+  transition: all .3s ease-out;
+}
+.AdminLoginPortal a:hover{
+  background: none;
+  color:#49b5e7 ;
+  border: 1px solid #49b5e7;
+}
+
+.AdminLoginPortal .secondaryButton {
+  color: #49b5e7;
+  background: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #49b5e7;
+  transition: all .3s ease-out;
+}
+
+.AdminLoginPortal .secondaryButton:hover {
+  background: none;
+  color: #49b5e7;
+  border: 1px solid #49b5e7;
+}
+
+.max_w_260x{
+  max-width: 260px;
+}
+.team__prop {
+  height: 250px;
+  -o-object-fit: cover !important;
+  object-fit: cover !important;
+  width: 100%;
+  background: var(--light1);
+}
+
+.teamHeading{
+font-size: 45px;
+  font-weight: 700;
+  color: #0f394c;
+  margin-bottom: 15px;
+}
+
+.newsletter-button{
+  background-color: #fff;
+  padding: 10px 20px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius:7px;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  transition: all .3s ease;
+  letter-spacing: 1px;
+}
+.newsletter-button:hover {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 7px;
+  margin-top: 20px;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -2073,7 +2210,7 @@ table.dataTable thead td{
   /* Media query for screens larger than 768px */
 @media screen and (min-width: 768px) {
   #hero {
-    height: 64vh;
+    height: 70vh;
   }
 }
 
